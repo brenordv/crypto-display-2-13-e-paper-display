@@ -23,6 +23,7 @@ the profits (lol).
 
 ## Software requirements
 - System running Python 3
+- I'm using `Raspberry Pi OS Lite`. You can use any other system as long as it supports Python 3
 - API key from Coinmarketcap
 
 ## Prepare to use the Display.
