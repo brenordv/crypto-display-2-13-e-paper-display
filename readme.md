@@ -21,6 +21,8 @@ the profits (lol).
 - Raspberry Pi Zero W
 - [Waveshare 2.13inch e-Paper HAT (B)](https://www.waveshare.com/2.13inch-e-paper-hat.htm)
 
+> If you don't have the display, it will just display the image locally using the Image.show() method.
+
 ## Software requirements
 - System running Python 3
 - I'm using `Raspberry Pi OS Lite`. You can use any other system as long as it supports Python 3
@@ -41,10 +43,15 @@ sudo pip3 install RPi.GPIO spidev
 sudo apt-get install -y python3-gpiozero
 ``` 
 
-3. Running the demo
+3. Install the dependencies
+In the folder where you cloned this repository, run the following command to install the dependencies:
 ```shell
-git clone https://github.com/waveshare/e-Paper.git
-cd e-Paper/RaspberryPi_JetsonNano/
+pip install -r requirements.txt
+```
+
+You might need to run this first (if you don't want to create a virtual environment):
+```shell
+export PIP_BREAK_SYSTEM_PACKAGES=1
 ```
 
 ## Making the script run automatically on boot
