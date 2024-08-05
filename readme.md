@@ -6,9 +6,24 @@ I was playing around and configured a couple of Raspberry Pis to mine Monero on 
 to see how much they have mined without having to open a website. So I decided to use a e-paper display to show me all
 the profits (lol).
 
+## Demo
+![Demo](demo.jpeg)
+
+## How it works
+1. Fetches the current value of Monero in USD from Coinmarketcap
+2. Fetches the amount of Monero mined from unmineable.com
+3. Calculates the total value of Monero mined in USD
+4. Displays the information on the e-paper display
+5. Sleeps for 10 minutes and repeats the process
+6. Extra: Every 24 hours, it will clear the screen and sleep for 10 seconds to prevent screen burn-in
+
 ## Hardware requirements
 - Raspberry Pi Zero W
 - [Waveshare 2.13inch e-Paper HAT (B)](https://www.waveshare.com/2.13inch-e-paper-hat.htm)
+
+## Software requirements
+- System running Python 3
+- API key from Coinmarketcap
 
 ## Prepare to use the Display.
 1. Enable SPI interface
